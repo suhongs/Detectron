@@ -201,7 +201,31 @@ _DATASETS = {
             _DATA_DIR + '/VOC2012/annotations/voc_2012_val.json',
         _DEVKIT_DIR:
             _DATA_DIR + '/VOC2012/VOCdevkit2012'
-    }
+    },
+  'deepfashion3_train': {
+      _IM_DIR:
+          _DATA_DIR + '/deepfashion',
+      _ANN_FN:
+          _DATA_DIR + '/deepfashion/annotations/deepfashion3_train.json',
+  },
+  'deepfashion3_val': {
+      _IM_DIR:
+          _DATA_DIR + '/deepfashion',
+      _ANN_FN:
+          _DATA_DIR + '/deepfashion/annotations/deepfashion3_val.json',
+  },
+  'deepfashion50_train': {
+      _IM_DIR:
+          _DATA_DIR + '/deepfashion',
+      _ANN_FN:
+          _DATA_DIR + '/deepfashion/annotations/deepfashion50_train.json',
+  },
+  'deepfashion50_val': {
+      _IM_DIR:
+          _DATA_DIR + '/deepfashion',
+      _ANN_FN:
+          _DATA_DIR + '/deepfashion/annotations/deepfashion50_val.json',
+  },
 }
 
 

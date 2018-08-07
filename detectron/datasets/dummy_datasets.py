@@ -45,3 +45,22 @@ def get_coco_dataset():
     ]
     ds.classes = {i: name for i, name in enumerate(classes)}
     return ds
+
+def get_deepfashion3_dataset():
+    """A dummy COCO dataset that includes only the 'classes' field."""
+    ds = AttrDict()
+    classes = ['__background__', 'Upper', 'Lower', 'Full', ]
+    ds.classes = {i: name for i, name in enumerate(classes)}
+    return ds
+
+def get_deepfashion50_dataset():
+    """A dummy COCO dataset that includes only the 'classes' field."""
+    ds = AttrDict()
+    classes = ['__background__', 'Anorak',  'Blazer',  'Blouse',  'Bomber',  'Button-Down',  'Cardigan',  'Flannel',  'Halter',  'Henley',
+  'Hoodie',  'Jacket',  'Jersey',  'Parka',  'Peacoat',  'Poncho',  'Sweater',  'Tank',  'Tee', 
+  'Top',  'Turtleneck',  'Capris',  'Chinos',  'Culottes',  'Cutoffs',  'Gauchos',  'Jeans', 
+  'Jeggings',  'Jodhpurs',  'Joggers',  'Leggings',  'Sarong',  'Shorts',  'Skirt',  'Sweatpants', 
+  'Sweatshorts',  'Trunks',  'Caftan',  'Cape',  'Coat',  'Coverup',  'Dress',  'Jumpsuit', 
+  'Kaftan',  'Kimono',  'Nightdress',  'Onesie',  'Robe',  'Romper',  'Shirtdress',  'Sundress'] 
+    ds.classes = {i: name for i, name in enumerate(classes)}
+    return ds

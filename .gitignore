@@ -22,3 +22,15 @@ detectron/datasets/data/*
 
 # Generated C files
 detectron/utils/cython_*.c
+
+# ADDED by suhong
+deepfashion50_output/
+deepfashion_output/
+deepfashion_retina_out/
+deeptest/
+fashionshow/
+fashionshow3_out/
+fashionshow_out/
+hwang3_out/
+hwang_object/
+nohup.out

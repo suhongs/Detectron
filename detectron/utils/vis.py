@@ -253,7 +253,7 @@ def vis_one_image_opencv(
 def vis_one_image(
         im, im_name, output_dir, boxes, segms=None, keypoints=None, thresh=0.9,
         kp_thresh=2, dpi=200, box_alpha=0.0, dataset=None, show_class=False,
-        ext='pdf', out_when_no_box=False):
+        ext='pdf', out_when_no_box=False, logger=None):
     """Visual debugging of detections."""
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
@@ -298,6 +298,9 @@ def vis_one_image(
             continue
 
         # show box (off by default)
+	if logger is not None:
+	    logger.info("%s : %f, %f" %(im_name, bbox[0] ,bbox[1]))
+ 
         ax.add_patch(
             plt.Rectangle((bbox[0], bbox[1]),
                           bbox[2] - bbox[0],
